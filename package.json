@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "start": "./vendor/bin/sail up -d",
+        "down": "./vendor/bin/sail down",
+        "path": "docker exec -it laravel-shop-laravel.test-1 /bin/bash",
+        "mod": "chmod 777 -R ./"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "vite": "^3.0.0"
+    }
+}
