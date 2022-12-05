@@ -2,12 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Category;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
 
-class UserSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,10 +15,10 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'Leonardo Albuquerque',
-            'email' => 'leeodev@hotmail.com',
-            'password' => Hash::make('123456')
+        Category::create([
+            'title' => 'Categoria de Exemplo',
+            'color' => '#ff00aa',
+            'user_id' => 1
         ]);
     }
 }

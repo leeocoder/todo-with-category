@@ -7,7 +7,7 @@
         "down": "./vendor/bin/sail down",
         "path": "docker exec -it todo-with-category-todo-1 /bin/bash",
         "mod": "chmod 777 -R ./",
-        "seed": "php artisan make:seed && npm run mod",
+        "seed": "php artisan make:seed",
         "test": "php artisan migrate:fresh && php artisan db:seed"
     },
     "devDependencies": {
